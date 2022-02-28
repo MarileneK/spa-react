@@ -1,7 +1,7 @@
-# SPA - Société Protectrice des Animaux
+# SPA - Gestion
 
 ## Description
-SPA - Société Protectrice des Animaux is a webpage on which you can handle all animal entries in the animal shelter. You can add or delete an animal, or update its information if you like.
+SPA - Gestion is a webpage on which you can handle all animal entries in the animal shelter SPA (Société Protectrice des Animaux). You can add or delete an animal, or update its information if you like.
 
 The aim was to put into practice my React knowledge. In a near future, I will add a backend.
 
