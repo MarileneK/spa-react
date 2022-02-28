@@ -5,6 +5,8 @@ SPA - Société Protectrice des Animaux is a webpage on which you can handle all
 
 The aim was to put into practice my React knowledge. In a near future, I will add a backend.
 
+Click here to have a look at the project: https://spa-gestion.herokuapp.com
+
 ## Set-up
 Install the node modules.
 ```bash
