@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:wght@100;300&display=swap');
+
+:root {
+  --color-orange: rgb(235, 99, 26);
+  --color-light-orange: rgba(235, 99, 26, 1);
+  --color-light-grey: #f5f6fa;
+  --color-light-grey-blue: rgba(149, 175, 192, 0.5);
+  --color-grey-blue: rgb(149, 175, 192);
+  --color-red: #ff7979;
+  --color-light-bg: rgba(0,0,0,0.5);
+  --color-light-beige: #FFFAF6;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, 'Sarabun', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-light-beige);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Amatic SC', sans-serif;
+}
+
+input, button {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: var(--color-orange);
+  letter-spacing: 0.2rem;
+  font-size: 3.5em;
+  line-height: normal;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: 1.5s;
+}
+
+a:hover {
+  color: var(--color-light-bg);
+}
+
+.main-container {
+  width: 89%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 100vh;
+}
+
+
+/* HEADER */
+header, ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style: none;
+  align-items: center;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+#btn-connexion {
+  background-color: var(--color-orange);
+  border: 1px var(--color-orange) solid;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+#btn-connexion:hover {
+  background-color: var(--color-light-beige);
+  border: 1px var(--color-orange) solid;
+  color: var(--color-orange);
+}
+
+.connexion:hover, .btn-add:hover, .btn-modify:hover, .btn-modify:hover {
+  background-color: var(--color-light-orange);
+  color: var(--color-light-grey);
+  cursor: pointer;
+}
+
+.iconNav {
+  color: var(--color-light-orange);
+  margin-right: 6px;
+  transition: 1s;
+}
+
+.iconNav:hover {
+  width: 30px;
+}
+
+/* MAIN */
+main {
+  margin-top: 40px;
+}
+
+.animalsList {
+  margin-top: 35px;
+}
+
+
+/* ANIMALSLIST */
+#animalsTable {
+  padding-top: 1em;
+  margin-bottom: 50px;
+  border: 1px var(--color-light-grey-blue) solid;
+  width: 100%;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 2.5;
+}
+
+td {
+  width: 1%;
+}
+
+th {
+  letter-spacing: .1rem;
+  line-height: 150%;
+}
+
+#index {
+  text-align: center;
+}
+
+.icon {
+  transition: 1s;
+}
+
+.icon:hover {
+  opacity: 0.5;
+}
+
+#totalAnimals {
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: var(--color-grey-blue);
+  text-decoration: underline;
+  text-underline-position: under; 
+  text-align: right;
+  padding-right: 4%;
+  margin-top: 3%;
+}
+
+#totalNumber {
+  color: var(--color-orange);
+  font-weight: bold;
+
+}
+
+/* ADD ANIMAL FORM */
+/* #addAnimal-section { */
+  /* border: 1px var(--color-light-blue) dotted; */
+  /* background-color: var(--color-light-blue); */
+  /* padding: 20px 100px; */
+/* } */
+
+form {
+  display: flex;
+  justify-content: space-evenly;
+  /* justify-content: end; */
+  flex-wrap: wrap;
+  /* width: 90%; */
+}
+
+.formField {
+  position: relative;
+}
+
+.formInput {
+  position: absolute;
+  display: block;
+  border: 0;
+  outline: 0;
+  margin-top: 5px;
+  background: var(--color-light-grey);
+  transition: border-color 0.2s;
+}
+
+.btn-add {
+  background-color: var(--color-orange);
+  border: 1px var(--color-orange) solid;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.btn-add:hover {
+  background-color: var(--color-light-beige);
+  border: 1px var(--color-orange) solid;
+  color: var(--color-orange);
+}
+
+
+/* FOOTER */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer a {
+  color: var(--color-grey-blue);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* EDIT ANIMAL MODAL */
+.backdrop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-light-bg);
+  z-index: 1;
+}
+
+.modal {
+  background-color: var(--color-light-grey-blue);
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal form input {
+  margin: 10px 0;
+  padding: 0 20px;
+}
+
+.close-icon {
+  text-align: right;
+  transition: 1s;
+}
+
+.close-icon:hover {
+  color: var(--color-orange);
+  cursor: pointer;
+}
+
+.btn-modify {
+  margin-top: 10px;
+  border: none;
+  background-color: var(--color-orange);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+/* ------------------------------------------------------ */
+/* MEDIA QUERIES */
+@media (max-width: 812px) {
+  .navCategory {
+    display: none;
+  }
+}
+
